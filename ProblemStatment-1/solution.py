@@ -544,7 +544,6 @@ def karanataka():
     try:
         
         content=content.replace("According to the accused","accused")
-        #content=content.replace("HOWE ADS:","Complainant")
         content=content.replace("Sah","address+")
 
 
@@ -1200,10 +1199,6 @@ def maharashtra():
 
 
 
-    #############################################################
-    ###############-------------mh2---------#####################
-
-
     except:
         try:
             com=re.search('Name and address - (.*)',content).group(1)
@@ -1248,7 +1243,6 @@ def maharashtra():
 
 
 
-    #####################--------------mh3-----------#################
         except:
             try:
                 content=content.replace("(Police","Police")
@@ -1304,10 +1298,8 @@ def maharashtra():
                 }
 
 
-    ############################---------------m4-------------########################
-    ###########--------to be checked---------################
             except:
-                #content=content.replace("ol","qr")
+               
                 com1=re.search('CNR No. (.*)',content).group(1)
                 
 
@@ -1514,8 +1506,7 @@ def punjab():
             print(ma1,file=f)
 
 
-        #ps=re.search('(?<=PStation: )(\w+\s+\w+)', ma1).group(1)
-        #dis=re.search('(?<=Dist )(\w+\s+\w+)', ma1).group(1)
+       
         complain=re.search('(?<=nna)(.*)', ma1).group(1)
         complain=re.sub(r'\s*\([^)]+\)', '', complain)
         address=re.search('(?<=1 Present Address )(.*)', ma1).group(1)
