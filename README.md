@@ -1,6 +1,5 @@
 # Bright_Bit-
-This Repository consists of solutions to both the problem statements provided.
-
+This Repository consists of solutions for the problem statement1
 ## Problem Statment 1
  This folder contains three files:
  solution.py is the python file with the code to extract data from pdf which is in regional language and translate to english, retrive the necessary information to convert it into a json file.
