@@ -1,4 +1,8 @@
 # Bright_Bit-
+
+## Check JSON output files👇  
+
+
 This Repository consists of solutions for the problem statement1
 ## Problem Statment 1
  This folder contains three files:
